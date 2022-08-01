@@ -1,5 +1,9 @@
 @media (max-width: 620px) {
 
+    header {
+        margin: 30px;
+    }
+
     main {
         padding: 0 15px;
         gap: 10px;
