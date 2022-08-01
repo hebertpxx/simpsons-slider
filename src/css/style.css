@@ -1,0 +1,163 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+    background-image: url(../images/fundo-site.jpg);
+    backdrop-filter: blur(5px);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding-top: 10px;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    margin: 10px 0;
+}
+
+ul {
+    width: 310px;
+    height: 520px;
+    position: relative;
+}
+
+li {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    padding: 12px;
+    border: 1px solid white;
+    border-radius: 10px;
+    box-shadow: rgba(22, 22, 22, 1) 0px 7px 29px 0px;
+    transition: opacity 0.5s ease-in-out;
+}
+
+li[data-status=selected] {
+    opacity: 1;
+    z-index: 1;
+}
+
+li[data-status=unselected] {
+    opacity: 0;
+}
+
+li.fundo-cartao {
+    background-color: rgba(253, 213, 29, 0.8);
+    /* background-image: url(../images/fundo-cartao.jpg); */
+}
+
+button {
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+    border: 1px solid white;
+    cursor: pointer;
+    background-color: rgba(253, 213, 29, 0.7);
+    transition: background-color 0.5s ease-in-out;
+    box-shadow: rgba(22, 22, 22, 1) 0px 7px 29px 0px;
+}
+
+button img {
+    width: 40px;
+}
+
+button:hover {
+    background-color: rgba(255, 234, 142, 0.7);
+    border: 1px solid rgba(247, 206, 24, 0.7);
+}
+
+#btn-voltar {
+    transform: rotateY(180deg);
+}
+
+li .informacoes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(255, 208, 0, 0.9);
+    padding: 8px 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+li .informacoes .nome {
+    color: #111;
+    font-size: 22px;
+}
+
+li .informacoes .idade {
+    color: #F1ECFF;
+    background-color: #333;
+    padding: 6px 10px;
+    border-radius: 20px
+}
+
+li .container-imagem {
+    text-align: center;
+}
+
+li .imagem-simpsons {
+    max-width: 100%;
+    max-height: 280px;
+    padding: 20px;
+}
+
+li .container-descricao {
+    padding: 10px;
+    background-color: rgba(255, 208, 0, 0.9);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+li .container-texto {
+    padding: 10px;
+    background-color: rgba(241, 220, 125, 0.9);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+li .container-texto .titulo {
+    color: #111;
+    background-color: rgba(255, 208, 0, 0.4);
+    padding: 5px;
+}
+
+li .container-texto .descricao {
+    font-size: 14px;
+    text-align: justify;
+    padding: 10px;
+    max-height: 115px;
+    overflow-y: auto;
+}
+
+p::-webkit-scrollbar {
+width: 12px;            /* width of the entire scrollbar */
+}
+
+p::-webkit-scrollbar-track {
+background: rgba(109, 109, 109, 0.719);        /* color of the tracking area */
+}
+
+p::-webkit-scrollbar-thumb {
+background-color: #333;   /* color of the scroll thumb */
+border-radius: 20px;       /* roundness of the scroll thumb */
+border: 2px solid #333;  /* creates padding around scroll thumb */
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');

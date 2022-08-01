@@ -1,0 +1,39 @@
+@media (max-width: 620px) {
+
+    main {
+        padding: 0 15px;
+        gap: 10px;
+    }
+
+    button {
+        width: 20px;
+        height: 20px;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 10px;
+    }
+
+    button img {
+        width: 30px;
+    }
+
+    ul {
+        height: 480px;
+    }
+
+    li .imagem-simpsons {
+        max-height: 230px;
+    }
+
+    li .informacoes .nome {
+        max-width: 50px;
+        font-size: 18px;
+    }
+
+    li .informacoes .idade {
+        font-size: 14px;
+    }
+
+}
